@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Khushi R | Software Developer, Data & AI Analyst</title>
+<meta name="description" content="Portfolio of Khushi R: software developer, data and AI analyst, and business and technical analyst based in Bengaluru.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍💻</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d1322;--card:#151d31;--line:#26324d;--tx:#e8edf8;--mu:#9aa7c4;--ac:#8ec5ff;--ac2:#ffc9a8;--r:18px}
+:root[data-theme=light]{--bg:#f5f7fc;--card:#fff;--line:#d9e0ef;--tx:#14213d;--mu:#55627f;--ac:#1f6fd1;--ac2:#c4622d}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--tx);font:400 1rem/1.65 'DM Sans',system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:'Bricolage Grotesque','DM Sans',sans-serif;line-height:1.1}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+.wrap{max-width:1080px;margin:auto;padding:0 22px}
+section{padding:84px 0}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;margin-bottom:10px}
+.sub{color:var(--mu);max-width:60ch;margin-bottom:34px}
+nav{position:fixed;inset:0 0 auto;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:58px;gap:12px}
+nav b{font-family:'Bricolage Grotesque';font-size:1.15rem}
+nav ul{display:flex;gap:20px;list-style:none;padding:0;overflow-x:auto;scrollbar-width:none}
+nav ul a{text-decoration:none;color:var(--mu);font-size:.92rem;white-space:nowrap}
+nav ul a:hover{color:var(--tx)}
+#th{background:none;border:1px solid var(--line);color:var(--tx);border-radius:50%;width:34px;height:34px;cursor:pointer;flex:none}
+.bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--ac),var(--ac2));z-index:30}
+.glow{position:fixed;width:420px;height:420px;border-radius:50%;pointer-events:none;background:radial-gradient(circle,color-mix(in srgb,var(--ac) 18%,transparent),transparent 65%);transform:translate(-50%,-50%);z-index:0;left:50%;top:30%}
+main,footer{position:relative;z-index:1}
+/* hero */
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:90px}
+.hero .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center}
+.hi{color:var(--ac2);font-weight:500;margin-bottom:8px}
+h1{font-size:clamp(3rem,9vw,6.2rem);font-weight:800;letter-spacing:-.03em}
+h1 span{display:inline-block;opacity:0;transform:translateY(60px) rotate(6deg);animation:up .8s cubic-bezier(.2,.9,.2,1) forwards}
+@keyframes up{to{opacity:1;transform:none}}
+.role{font-size:clamp(1.1rem,2.6vw,1.5rem);margin:14px 0 16px;min-height:2em;color:var(--ac)}
+.role i{display:inline-block;width:2px;height:1.1em;background:var(--ac);vertical-align:-3px;margin-left:3px;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.lead{color:var(--mu);max-width:52ch;margin-bottom:26px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:11px 20px;border-radius:99px;border:1px solid var(--line);text-decoration:none;font-weight:500;transition:.25s}
+.btn:hover{transform:translateY(-3px);border-color:var(--ac)}
+.btn.p{background:var(--ac);color:#0b1020;border-color:var(--ac)}
+:root[data-theme=light] .btn.p{color:#fff}
+.pic{position:relative;width:min(340px,80%);margin:auto;aspect-ratio:1}
+.pic img{width:100%;height:100%;border-radius:50%;object-fit:cover;position:relative;animation:fl 6s ease-in-out infinite}
+.pic:before{content:"";position:absolute;inset:-12px;border-radius:50%;background:conic-gradient(var(--ac),var(--ac2),var(--ac));animation:sp 8s linear infinite;-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 calc(100% - 2px));mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 calc(100% - 2px))}
+@keyframes sp{to{transform:rotate(360deg)}}
+@keyframes fl{50%{transform:translateY(-10px)}}
+/* generic */
+.rv{opacity:0;transform:translateY(24px);transition:.7s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.about{display:grid;grid-template-columns:1fr 1.5fr;gap:40px;align-items:center}
+.about img{width:100%;max-height:480px;object-fit:cover;object-position:top;border-radius:var(--r);border:1px solid var(--line)}
+.stats{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px}
+.stats div{flex:1;min-width:110px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+.stats b{display:block;font:800 1.7rem 'Bricolage Grotesque';color:var(--ac)}
+.stats span{color:var(--mu);font-size:.85rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+/* projects */
+.proj{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-bottom:26px;align-items:center}
+.proj:nth-child(even) .shots{order:-1}
+.proj h3{font-size:1.6rem;margin-bottom:4px}
+.tag{color:var(--ac2);font-size:.92rem;margin-bottom:12px}
+.proj ul{padding-left:18px;color:var(--mu);margin:12px 0}
+.proj li{margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0 16px}
+.chips span{font-size:.8rem;padding:4px 11px;border-radius:99px;border:1px solid var(--line);background:color-mix(in srgb,var(--ac) 8%,transparent)}
+.shots{display:flex;gap:12px;justify-content:center;align-items:flex-start}
+.shots img{border-radius:12px;border:1px solid var(--line);max-width:100%;transition:.35s;cursor:zoom-in}
+.shots.ph img{width:32%}
+.shots.wide{flex-direction:column}
+.shots.two img{width:46%}
+.shots img:hover{transform:scale(1.04) rotate(-1deg);z-index:2}
+.note{font-size:.85rem;color:var(--mu);border-left:3px solid var(--ac2);padding-left:10px;margin-bottom:12px}
+/* case study */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.tabs button{font:inherit;background:none;border:1px solid var(--line);color:var(--mu);padding:8px 15px;border-radius:99px;cursor:pointer;transition:.2s}
+.tabs button.on{background:var(--ac);color:#0b1020;border-color:var(--ac);font-weight:700}
+:root[data-theme=light] .tabs button.on{color:#fff}
+#cs{min-height:250px}
+#cs>div{animation:up .45s forwards;opacity:0;transform:translateY(12px)}
+#cs ul{padding-left:18px;color:var(--mu)}#cs li{margin:5px 0}
+pre{background:#0a0f1c;color:#cfe3ff;padding:16px;border-radius:12px;overflow-x:auto;font-size:.85rem;margin:12px 0}
+.warn{font-size:.85rem;color:var(--ac2);margin-bottom:16px}
+/* skills */
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.sk h3{font-size:1.05rem;margin-bottom:6px;color:var(--ac)}
+.sk .chips{margin-bottom:0}
+/* timeline */
+.tl{border-left:2px solid var(--line);padding-left:24px;display:grid;gap:22px}
+.tl>div{position:relative}
+.tl>div:before{content:"";position:absolute;left:-31px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--ac);box-shadow:0 0 0 4px var(--bg)}
+.tl small{color:var(--mu)}
+.tl h3{font-size:1.15rem}
+.tl ul{padding-left:18px;color:var(--mu);margin-top:6px}
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin-top:6px}
+.certs .card{padding:18px}
+.certs a{color:var(--ac)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+#contact{text-align:center}
+#contact h2{font-size:clamp(2.2rem,6vw,4rem)}
+#contact .btns{justify-content:center}
+footer{text-align:center;color:var(--mu);font-size:.85rem;padding:30px}
+#lb{position:fixed;inset:0;background:#000d;display:none;place-items:center;z-index:50;cursor:zoom-out;padding:20px}
+#lb.on{display:grid}#lb img{max-width:100%;max-height:92vh;border-radius:12px}
+@media(max-width:820px){.hero .wrap,.about,.proj,.two{grid-template-columns:1fr}.pic{order:-1;width:min(240px,70%)}.proj:nth-child(even) .shots{order:0}section{padding:60px 0}nav b{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}h1 span,.rv,#cs>div{opacity:1!important;transform:none!important}}
+</style>
+</head>
+<body>
+<div class="bar" id="bar"></div><div class="glow" id="glow"></div>
+<nav><div class="wrap"><b>Khushi R</b>
+<ul><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#case">Case study</a></li><li><a href="#skills">Skills</a></li><li><a href="#journey">Experience</a></li><li><a href="#contact">Contact</a></li><li><a href="resume.pdf" target="_blank" rel="noopener" style="color:var(--ac)">Resume</a></li></ul>
+<button id="th" aria-label="Switch light or dark theme">◐</button></div></nav>
+
+<main>
+<header class="hero"><div class="wrap">
+<div>
+<p class="hi">Hi, I'm</p>
+<h1 id="nm" aria-label="Khushi R">Khushi R</h1>
+<p class="role"><span id="ty"></span><i></i></p>
+<p class="lead">2026 Computer Science graduate from Bengaluru. I build full-stack apps, work with data and machine learning, and turn business problems into technical solutions.</p>
+<div class="btns"><a class="btn p" href="#projects">See my projects</a><a class="btn" href="#case">Read the case study</a><a class="btn" href="resume.pdf" target="_blank" rel="noopener">Resume</a><a class="btn" href="https://github.com/khushigowda10" target="_blank" rel="noopener">GitHub</a><a class="btn" href="#contact">Contact me</a></div>
+</div>
+<div class="pic"><img src="images/profile.jpg" alt="Portrait of Khushi R" width="340" height="340"></div>
+</div></header>
+
+<section id="about"><div class="wrap about">
+<img class="rv" src="images/about.jpg" alt="Khushi R standing in her college building" loading="lazy">
+<div class="rv"><h2>About me</h2>
+<p style="color:var(--mu);margin-bottom:12px">I work across software development, data analytics, AI and business problem-solving. I have built applications, worked with databases, and applied machine learning to practical problems.</p>
+<p style="color:var(--mu)">I enjoy understanding what users need, analyzing the data, and turning that into something that works. I'm open to roles in software engineering, data analytics, business analysis, technical analysis and AI-driven products.</p>
+<div class="stats"><div><b data-n="9.39">0</b><span>CGPA, B.E. CSE</span></div><div><b data-n="3">0</b><span>Featured projects</span></div><div><b data-n="5">0</b><span>Certifications</span></div></div></div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2 class="rv">Projects</h2><p class="sub rv">Three projects covering web, mobile and machine learning.</p>
+
+<article class="proj card rv"><div>
+<h3>AI Finance Autopilot</h3><p class="tag">Full-stack personal finance platform</p>
+<p class="note">Team project. I owned authentication, the dashboard, AI insights, backend integration, rate limiting and testing. My teammate owned signup, budgets and transaction management.</p>
+<ul><li>Users upload transactions as CSV files. They are stored in PostgreSQL, categorized, and shown on a dashboard with income, expenses, savings, budgets and trends.</li><li>Built an AI insights REST endpoint that sends a structured summary to the Gemini API, with an 8-second timeout and a rule-based fallback.</li><li>Added API rate limiting (login and signup: 5 requests per 15 minutes per IP; insights: 10 per minute) and verified 429 responses.</li><li>Wrote Jest and Supertest tests. In a controlled local k6 test (10 users, 30 seconds) the dashboard API averaged about 13 ms with 0% errors.</li></ul>
+<div class="chips"><span>React</span><span>Vite</span><span>Tailwind</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>JWT</span><span>Gemini API</span><span>Rate limiting</span><span>Jest</span><span>k6</span></div>
+<div class="btns"><a class="btn p" href="https://ai-finance-autopilot.vercel.app/" target="_blank" rel="noopener">Live demo</a><a class="btn" href="https://github.com/khushigowda10/ai-finance-autopilot" target="_blank" rel="noopener">GitHub</a></div></div>
+<div class="shots wide"><img src="images/fin-1.jpg" alt="AI Finance Autopilot login screen" loading="lazy"><img src="images/fin-2.jpg" alt="Spending breakdown donut chart" loading="lazy"></div></article>
+
+<article class="proj card rv"><div>
+<h3>GATServe</h3><p class="tag">Food ordering and demand forecasting for campus canteens</p>
+<ul><li>Random Forest demand forecasting to support planning.</li><li>NLP sentiment classification to turn feedback into insights.</li><li>Backend integration and an admin dashboard showing orders and leftover inventory.</li></ul>
+<div class="chips"><span>Flutter</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>PostgreSQL</span><span>Machine Learning</span><span>NLP</span></div>
+<div class="btns"><a class="btn p" href="https://github.com/Komal-patil07/Gatserve" target="_blank" rel="noopener">GitHub</a></div></div>
+<div class="shots two"><img src="images/gat-1.jpg" alt="GATServe menu screen" loading="lazy"><img src="images/gat-2.jpg" alt="GATServe sign in screen" loading="lazy"></div></article>
+
+<article class="proj card rv"><div>
+<h3>Shishu-Sneh</h3><p class="tag">Offline-first Android app for a baby's first year</p>
+<ul><li>Room and SQLite storage so the app works without internet.</li><li>Growth tracker, vaccination calendar, milestones and feeding guide.</li><li>WorkManager reminders and Generative AI API integration.</li></ul>
+<div class="chips"><span>Kotlin</span><span>Android</span><span>Room</span><span>SQLite</span><span>WorkManager</span><span>MVVM</span><span>Generative AI</span></div>
+<div class="btns"><a class="btn p" href="https://github.com/khushigowda10/Shishu-Sneh" target="_blank" rel="noopener">GitHub</a></div></div>
+<div class="shots ph"><img src="images/shishu-1.jpg" alt="Shishu-Sneh splash screen" loading="lazy"><img src="images/shishu-2.jpg" alt="Shishu-Sneh home screen" loading="lazy"><img src="images/shishu-3.jpg" alt="Shishu-Sneh vaccination list" loading="lazy"></div></article>
+</div></section>
+
+<section id="case"><div class="wrap">
+<h2 class="rv">Case study: Customer Transaction Insights</h2>
+<p class="sub rv">How I would take a business problem from requirements to data analysis to a technical solution.</p>
+<p class="warn rv">Independent, illustrative case study. It is not client work, and its requirements and metrics are proposals, not measured results.</p>
+<div class="card rv"><div class="tabs" id="tabs" role="tablist"></div><div id="cs" aria-live="polite"></div></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2 class="rv">Skills</h2><p class="sub rv">Grouped by the kind of work they support.</p>
+<div class="sk" id="sk"></div>
+</div></section>
+
+<section id="journey"><div class="wrap two">
+<div class="rv"><h2>Experience</h2><div class="tl" style="margin-top:24px">
+<div><small>Feb 2026 – May 2026</small><h3>Android App Development Intern (Generative AI)</h3><small>MindMatrixEd, Bengaluru</small><ul><li>Built Android features in Kotlin with Generative AI APIs, Room Database and WorkManager, and built the Shishu-Sneh app end to end.</li><li>Worked with the team on workflows, testing, debugging and pre-release validation.</li></ul></div>
+<div><small>Jul 2024 – Jun 2026</small><h3>Student Coordinator & Volunteer</h3><small>IT Virtuoso Club, Global Academy of Technology</small><ul><li>Coordinated technical events and workshops for the CSE department, including the Brainstorm Battle competition.</li><li>Volunteered at Hack-A-League 3.0, a national 24-hour hackathon, supporting event operations.</li></ul></div></div></div>
+<div class="rv"><h2>Education</h2><div class="tl" style="margin-top:24px">
+<div><small>2022 – 2026</small><h3>B.E. Computer Science & Engineering</h3><small>Global Academy of Technology, Bengaluru · CGPA 9.39</small></div>
+<div><small>2020 – 2022</small><h3>PCMC</h3><small>Sri Chaitanya PU College, Bengaluru · 97.3%</small></div></div></div>
+</div>
+<div class="wrap rv" style="margin-top:60px"><h2>Certifications</h2><div class="certs">
+<div class="card"><b>Career Essentials in Generative AI</b><br><small>Microsoft & LinkedIn Learning · Jun 2026</small><br><a href="certificates/generative-ai.pdf" target="_blank" rel="noopener">View certificate</a></div>
+<div class="card"><b>Business Analysis Foundations: Business Process Modeling</b><br><small>LinkedIn Learning, IIBA endorsed · Jun 2026</small><br><a href="certificates/business-process-modeling.pdf" target="_blank" rel="noopener">View certificate</a></div>
+<div class="card"><b>Linux Foundation Certification</b></div>
+<div class="card"><b>Java Foundation Certification</b></div>
+<div class="card"><b>Data Science Foundation Certification</b></div></div></div>
+</section>
+
+<section id="contact"><div class="wrap rv">
+<h2>Let's work together</h2><p class="sub" style="margin-inline:auto">Open to software, data, analyst and AI roles. The quickest way to reach me is email or LinkedIn.</p>
+<div class="btns"><a class="btn p" href="mailto:khushir1ga22cs084@gmail.com">Email me</a><a class="btn" href="resume.pdf" download="Khushi_R_Resume.pdf">Download resume</a><a class="btn" href="https://www.linkedin.com/in/khushi-r-868309249/" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/khushigowda10" target="_blank" rel="noopener">GitHub</a></div>
+<p class="sub" style="margin:22px auto 0">Bengaluru, Karnataka, India</p>
+</div></section>
+</main>
+<footer>© 2026 Khushi R</footer>
+<div id="lb"><img alt=""></div>
+
+<script>
+const $=s=>document.querySelector(s);
+// name letters
+$('#nm').innerHTML=[...'Khushi R'].map((c,i)=>`<span aria-hidden="true" style="animation-delay:${.15+i*.07}s">${c==' '?'&nbsp;':c}</span>`).join('');
+// typing
+const roles=['Software Developer','Data & AI Analyst','Business & Technical Analyst'];let ri=0,ci=0,del=0;
+(function t(){const w=roles[ri];$('#ty').textContent=w.slice(0,ci);
+if(!del&&ci==w.length){del=1;return setTimeout(t,1600)}
+if(del&&ci==0){del=0;ri=(ri+1)%roles.length}
+ci+=del?-1:1;setTimeout(t,del?35:75)})();
+// scroll reveal, counters, progress
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll('[data-n]').forEach(c=>{const n=+c.dataset.n,d=n%1?2:0;let s=null;const f=ts=>{s=s||ts;const p=Math.min((ts-s)/1200,1);c.textContent=(n*p).toFixed(d);if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)});io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+addEventListener('scroll',()=>{$('#bar').style.width=scrollY/(document.body.scrollHeight-innerHeight)*100+'%'},{passive:true});
+addEventListener('pointermove',e=>{const g=$('#glow');g.style.left=e.clientX+'px';g.style.top=e.clientY+'px'});
+// theme
+const root=document.documentElement;try{const s=localStorage.getItem('th');if(s)root.dataset.theme=s}catch(e){}
+$('#th').onclick=()=>{const v=root.dataset.theme=='light'?'dark':'light';root.dataset.theme=v;try{localStorage.setItem('th',v)}catch(e){}};
+// lightbox
+document.querySelectorAll('.shots img').forEach(i=>i.onclick=()=>{$('#lb img').src=i.src;$('#lb img').alt=i.alt;$('#lb').classList.add('on')});
+$('#lb').onclick=()=>$('#lb').classList.remove('on');
+addEventListener('keydown',e=>{if(e.key=='Escape')$('#lb').classList.remove('on')});
+// skills
+const sk={'Programming & data':['Python','SQL','Java','JavaScript','Kotlin','C','PostgreSQL','MySQL','MongoDB','SQLite','Room Database','Data analysis','Data processing'],
+'Data science & AI':['Machine Learning','Random Forest','NLP','Sentiment classification','Demand forecasting','Generative AI APIs','Analytics dashboards'],
+'Business & technical analysis':['Business problem analysis','Business process modeling','Requirements analysis','Workflow analysis','Root-cause investigation','Data-driven recommendations','Technical documentation'],
+'Software development':['React.js','Vite','HTML','CSS','Tailwind CSS','Node.js','Express.js','REST APIs','Axios','Android','JWT'],
+'Testing & quality':['Jest','Supertest','k6','API testing','Integration testing','Load testing','Debugging'],
+'Tools & cloud':['Git','GitHub','Postman','Agile','Android Studio','VS Code','AWS S3 & EC2','Vercel','IaaS / PaaS / SaaS']};
+$('#sk').innerHTML=Object.entries(sk).map(([k,v])=>`<div class="card rv"><h3>${k}</h3><div class="chips">${v.map(x=>`<span>${x}</span>`).join('')}</div></div>`).join('');
+document.querySelectorAll('#sk .rv').forEach(e=>io.observe(e));
+// case study
+const L=a=>'<ul>'+a.map(x=>`<li>${x}</li>`).join('')+'</ul>';
+const cs=[
+['1. Problem',`<p style="color:var(--mu);margin-bottom:10px">Users of a personal finance app record transactions but struggle to see spending patterns, spot budget overruns and decide what to change.</p>`+L(['Find user pain points in expense tracking, spending visibility and budgeting.','Define the primary users and what they need.','Set the objective: make spending easy to understand and support better budgeting.'])],
+['2. Requirements',`<b>Functional (illustrative)</b>`+L(['Import or record transactions.','Categorize by spending type.','Filter by date, category and amount.','Compare actual spending with budget limits.','Show spending summaries and budget variance.'])+`<b>Success metrics (proposed)</b>`+L(['% of transactions categorized.','Users reviewing their dashboard.','% of budget categories over limit.','Less manual effort to review transactions.'])],
+['3. Analysis',`<p style="color:var(--mu)">With a hypothetical dataset, I would look at spending by category and month, missing or invalid fields, trends over time, budget variance and unusual spending.</p><pre>SELECT
+  category,
+  SUM(amount) AS total_spending,
+  COUNT(*)    AS transaction_count
+FROM transactions
+WHERE transaction_date >= '2026-01-01'
+GROUP BY category
+ORDER BY total_spending DESC;</pre><p style="color:var(--mu);font-size:.9rem">Assumes a transactions table with category, amount and transaction_date. Tools: SQL, PostgreSQL, Python.</p>`],
+['4. Recommendations',`<p style="color:var(--mu);margin-bottom:6px">Actual recommendations would depend on the data. Likely candidates:</p>`+L(['Highlight categories that exceed a user-set budget.','Flag uncategorized transactions for review.','Show month-over-month spending comparisons.','Order dashboard content by what users need most.','Validate imported data before generating insights.'])],
+['5. Solution',L(['<b>Input:</b> transaction records or CSV uploads.','<b>Data layer:</b> PostgreSQL.','<b>Processing:</b> SQL queries and Python analysis.','<b>Application:</b> REST APIs.','<b>Presentation:</b> interactive dashboard.','<b>Validation:</b> data-quality checks and functional tests.'])],
+['6. Acceptance',L(['Imported transactions are stored without unintended duplicates.','Category and date filters return the expected records.','Spending totals reconcile with the underlying data.','Budget variance is calculated correctly.','Invalid records give clear validation feedback.','Dashboard figures update when transactions change.'])]];
+const tb=$('#tabs'),pn=$('#cs');
+function show(i){[...tb.children].forEach((b,j)=>{b.classList.toggle('on',i==j);b.setAttribute('aria-selected',i==j)});pn.innerHTML=`<div>${cs[i][1]}</div>`}
+cs.forEach((c,i)=>{const b=document.createElement('button');b.textContent=c[0];b.role='tab';b.onclick=()=>show(i);tb.append(b)});show(0);
+</script>
+</body>
+</html>
